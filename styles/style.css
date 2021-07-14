@@ -1,4 +1,5 @@
 /* font style  */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
 
 body{ font-family: 'Poppins', sans-serif;  
@@ -8,14 +9,20 @@ body{ font-family: 'Poppins', sans-serif;
 /* top-Banner  */
 header{ background-color: rgba(45, 37, 160, 1);
             width: 1440px;
-            height: 677px; 
-            margin-top: 0px;
-            margin-left: 0px;
+            height: 677px;  
+            margin: 0px;
+            
            
+}
+header:hover{ background-color: rgba(224, 44, 109, 1);  
+                width: 1440px;
+                height:677px ;
+                margin: 0px;
 }
 .top-banner{ display: flex;
             ;   }
-.banner-info{  color: rgba(255, 255, 255, 1);
+.banner-info{  font-family: 'Poppins', sans-serif;
+             color: rgba(255, 255, 255, 1);
             margin-left:156px;
             margin-top: 207px;
             margin-bottom: 5px;     
@@ -25,13 +32,14 @@ header{ background-color: rgba(45, 37, 160, 1);
 .banner img{ width: 556.01px;
         height: 438px;
         margin-top: 153px;
+        margin-left: 250px;
                
     }
 a{  font-size: 16px; margin-top: 0px;
      color: white;
     text-decoration: none;
     background-color:rgba(224, 44, 109, 1);
-    padding: 10px; 
+    padding: 10px, 24px, 10px, 24px; 
 
 }
 .login{ font-size: 16px;
@@ -46,9 +54,12 @@ a:hover{ color: red; background-image: linear-gradient(cyan, blue);  }
 /*  TOP BANNER ENDS  */
 
 /* MAIN START  */
-.container{ background-color: #FFFFFF;
-            height: 3750px ;
-            width: 1440px ;    }
+.container{ margin-top: 70px;
+            margin-left: 200px;
+        
+            background-color: #FFFFFF;
+            
+            width: 1050px ;    }
 .players{  
             display: grid;
             grid-template-columns: repeat(3,1fr);
@@ -66,9 +77,7 @@ a:hover{ color: red; background-image: linear-gradient(cyan, blue);  }
     height: 540px;
     justify-content: space-between;
     flex-direction: column;
-    
-
-}
+    }
 .player p{  font-size: 16px; font-weight: 400;
             color:  rgba(108, 108, 108, 1);
     ;}
@@ -85,5 +94,78 @@ a:hover{ color: red; background-image: linear-gradient(cyan, blue);  }
     margin-bottom: 15px;
      
 }             
+ 
+/* MAIN END  */
+
+/* ARTICLE START */
+article{ margin-top: 0;
+    display: flex;
+}
+.article-info{ width: 469px;
+                height: 309px; 
+                margin-top: 145px;
+                margin-left: 182px;    
+            }
+.article-pic{ margin-right: 156px;
+                margin-top: 165px;
+                margin-left: 66px;}            
+
+
+article h1{ font-family: 'Poppins', sans-serif;
+            font-size: 48px;}
+article p{  font-family: 'Poppins', sans-serif;
+            color:  rgba(108, 108, 108, 1);
+            font-size: 16px; font-weight: 400;
     
+    }
+article a{ border-radius: 5px; padding: 10px;}
+/* ARTICLE END */
+/* FOOTER STARTS */
+.logo img{ width: 483.87px;
+        height: 110px; 
+      }
+
+footer{ margin-top: 168px;
+         display: flex;
+        flex-direction: column;
+        align-items: center;
+        }   
+
+.social{    margin: 20px 0px;
+            color: rgba(150, 155, 171, 1) ;
+            font-size: 30px;}
+.app{  
+        margin: 0px 2px;
+        padding: 5px;}    
+ 
+ /* Media Queries  */
+ /* MOBILE SCREEN  */
+ @media only screen and (max-width:688px) {
+     .container , header  { width: 100%; height: 1000px;}
+     .banner img {width: 300px;}
+      .players{ display: grid; align-items: center;
+            grid-template-columns: repeat(1,1fr);
+                }
+
+    .top-banner{ flex-direction: column;}
+   .banner-info,  .player, .container , article ,.banner img , .article-info { margin-left: 0%; margin-top: 0%; }  
+   article{ display: grid; align-items: center;
+            grid-template-columns: repeat(1,1fr);
+            position: absolute;
+    
+    
+    top: 7800px;}
+  
+  footer{   width: 100%; height: 170px;
+            align-items: center;
+            position: absolute;
+            top: 8000px ;}
+  .article-pic{ display: none;}
+  }
+
+/* tablet devices  */
+@media only screen  and (min-width:688px) and (max-width:992px) 
+{  .players, article ,footer{ display: grid; grid-template-columns: repeat(2,1fr); align-items: center; justify-content: center;}
+.banner-info,  .player, .container , article ,.banner img , .article-info { margin-left: 10px; margin-top: 10px; } 
+}
 
