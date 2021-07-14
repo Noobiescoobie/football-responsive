@@ -165,7 +165,11 @@ footer{ margin-top: 168px;
 
 /* tablet devices  */
 @media only screen  and (min-width:688px) and (max-width:992px) 
-{  .players, article ,footer{ display: grid; grid-template-columns: repeat(2,1fr); align-items: center; justify-content: center;}
-.banner-info,  .player, .container , article ,.banner img , .article-info { margin-left: 10px; margin-top: 10px; } 
+{  .players  ,footer{ width: 100%;
+    display: grid; grid-template-columns: repeat(2,1fr); align-items: center; justify-content: center;}
+.banner-info,  .player, .container , article ,.banner img , .article-info { margin-left: 50px; margin-top: 10px; } 
+.article-info h1{ margin-left: 50px ;}
+article { display: flex;  flex-direction: column;  }
+.copyright{ margin-left: 40px;}
 }
 
